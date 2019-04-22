@@ -26,7 +26,7 @@ predictor = dlib.shape_predictor("dlib_facial_dots.dat")
 (lStart, lEnd) = face_utils.FACIAL_LANDMARKS_IDXS["left_eye"]
 (rStart, rEnd) = face_utils.FACIAL_LANDMARKS_IDXS["right_eye"]
 
-video = cv2.VideoCapture("vid4.mp4")
+video = cv2.VideoCapture(0)
 
 while True:
 	ret, frame = video.read()
